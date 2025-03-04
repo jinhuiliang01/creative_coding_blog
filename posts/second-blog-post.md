@@ -1,7 +1,7 @@
 ---
-title: H1
+title: Homework 1
 published_at: 2025-03-04
-snippet: An example of a blog post.
+snippet: My attempts to use for loop to create squares and my reflections after watching Rafaël Rozendaal's artworks.
 disable_html_sanitization: true
 allow_math: true
 ---
