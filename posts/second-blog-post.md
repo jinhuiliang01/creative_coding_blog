@@ -14,6 +14,9 @@ I pressed the play button at first to get an idea of what to expect. Then I look
 After comparing the source code with the code I wrote I found that I was missing a line which prevented it from running, so I added it and it ran correctly.
 ![a screen shot of the attempt](/w01s1/attempt_2.png)
 
+But it's still different from the reference one, the original work is infinite loop, while mine stops once it reaches the corresponding size and doesn't loop.
+![a screen shot of the attempt](/w01s1/attempt_3.png)
+
 ---
 
 # I chose the work 'half half half' from Rafaël Rozendaal
