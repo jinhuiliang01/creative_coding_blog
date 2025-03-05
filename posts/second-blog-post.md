@@ -11,6 +11,9 @@ allow_math: true
 I pressed the play button at first to get an idea of what to expect. Then I looked at the code and tried to understand what each line of code meant and what part of the outcomes it represented. But there is still something I don't understand. I still tried to do it and the result is as follows.
 ![a screen shot of the attempt](/w01s1/attempt.png)
 
+After comparing the source code with the code I wrote I found that I was missing a line which prevented it from running, so I added it and it ran correctly.
+![a screen shot of the attempt](/w01s1/attempt_2.png)
+
 ---
 
 # I chose the work 'half half half' from Rafaël Rozendaal
