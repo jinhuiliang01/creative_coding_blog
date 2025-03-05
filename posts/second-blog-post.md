@@ -22,3 +22,9 @@ But it's still different from the reference one, the original work is infinite l
 # I chose the work 'half half half' from Rafaël Rozendaal
 
 Her work ‘half half half’ is in a way similar to the theory we touched on in class today, which is to generate movement by means of framecount, but the difference is that her code stops every time we go from left to right to the middle and then refreshes to go down from the top, and every time we click, the colours change. Every time we click, the colours change.
+
+The list of things I need to learn is as follows:
+
+1. Change colours immediately with every click.
+2. make it so that it stops when it reaches the middle of the screen and framecounts in a different direction.
+3. make it so that the colours it matches are random rather than fixed.
