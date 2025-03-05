@@ -11,6 +11,8 @@ allow_math: true
 I pressed the play button at first to get an idea of what to expect. Then I looked at the code and tried to understand what each line of code meant and what part of the outcomes it represented. But there is still something I don't understand. I still tried to do it and the result is as follows.
 ![a screen shot of the attempt](static/attempt.png)
 
+---
+
 # I chose the work 'half half half' from Rafaël Rozendaal
 
 Her work ‘half half half’ is in a way similar to the theory we touched on in class today, which is to generate movement by means of framecount, but the difference is that her code stops every time we go from left to right to the middle and then refreshes to go down from the top, and every time we click, the colours change. Every time we click, the colours change.
