@@ -1,5 +1,5 @@
 ---
-title: Homework 2
+title: Homework 1b
 published_at: 2025-03-06
 snippet: Discussions with my classmates in class and using p5 editor to sketch one of the concepts.
 disable_html_sanitization: true
