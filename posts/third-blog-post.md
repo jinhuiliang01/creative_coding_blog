@@ -38,3 +38,4 @@ Mataso:
 
 I will do the concept about when clicking the mouse it will change the colour.
 ![a screen shot of the my attempt to the colour change](/w01s2/attempt_1.png)
+When clicking, the colour would be changed.
