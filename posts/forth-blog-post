@@ -5,3 +5,11 @@ snippet: My thinking about making cute visuals, cute sounds and cute interaction
 disable_html_sanitization: true
 allow_math: true
 ---
+
+# This is my thinking how I might go about making cute visuals, cute sounds and cute interactions.
+
+As for cute visuals, I would choose soft and pastel colour like light pink and light blue. And I think it needs to be some tiny decorative details like heart shape. And it could use orbit control, which means using mouse or touch input to adjust camera orientation in a 3D sketch. And the shapes would be the heart shapes.
+
+As for cute sounds, I would probably use high-pitched “boop” or “pop” sound when mouse clicking. And maybe play some slow sweet song for the background music.
+
+As for the interactions, I would let the heart shape change the colour when the mouse is hanging on the shape.
