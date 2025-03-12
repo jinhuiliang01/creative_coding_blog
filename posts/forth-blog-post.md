@@ -31,4 +31,6 @@ My initial thoughts are pretty much the same as above, but the practical aspects
 
 </script>
 
+Problem fix: At the beginning, there are too many blocks which cause lagging problem, I just reduce the number of blocks to make the interaction a bit more silky.
+
 I found it very difficult to make a three-dimensional heart. So I searched the Internet tutorials to see, to follow, to make a thing like this. And then changing the colours and sound effects have to be changed on the basis of this code.
