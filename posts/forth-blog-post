@@ -20,13 +20,3 @@ As for the interactions, I would let the heart shape change the colour when the 
 
 My initial thoughts are pretty much the same as above, but the practical aspects will only be known after the p5.js specific operation, so here are my experiments.
 ![The first attempt of making a heart shape with orbit control](/w02s1/attempt_1.png)
-
-<iframe id="Heart_Shape" src="https://editor.p5js.org/jinhuiliang01/sketches/5yeKD4_v9"></iframe>
-
-<script type="module">
-
-    const iframe  = document.getElementById (`Heart_Shape`)
-    iframe.width  = iframe.parentNode.scrollWidth
-    iframe.height = iframe.width * 9 / 16 + 42
-
-</script>
