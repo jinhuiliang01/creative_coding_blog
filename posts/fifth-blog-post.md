@@ -12,6 +12,8 @@ allow_math: true
 2. The common purpose: We can all feel each other's love, so I'm going to make this direct love heart.
 3. Shared challenge: The person I like is not in the same city or even the same country as me, so the biggest challenge is the distance. I want to be able to express things in a straightforward way.
 
+---
+
 # The connection between how my chosen kindred spirit may understand or relate to the visual, sonic, and interactive elements of my assignment 1 idea.
 
 Visual: As I am very direct in my expression, I basically do not have to guess what I am going to say. As well as the colours I chose are her favourite colours, so it is noticeable.
@@ -33,7 +35,7 @@ I've now added a colour gradient to the previous one to make it look a bit cuter
 
 </script>
 
-Chatgpt, Claude and Deepseek are the tools to help me understand the meaning of the code. And I also learn some of the function from the Youtube turorials and p5.js references.
+## Chatgpt, Claude and Deepseek are the tools to help me understand the meaning of the code. And I also learn some of the function from the Youtube turorials and p5.js references.
 
 # The recreation of the artwork 'Falling Falling'
 
