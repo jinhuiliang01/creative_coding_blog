@@ -23,6 +23,8 @@ Interactive： She likes cool, three-dimensional things, so orbit control is a g
 I've now added a colour gradient to the previous one to make it look a bit cuter as well as less monotonous. I'll wait until next week to search the tutorials online or see if the lecturer will talk about it in class.
 ![new update of my assignment 1](/w02s2/attempt_2.png)
 
+Chatgpt, Claude and Deepseek are the tools to help me understand the meaning of the code. And I also learn some of the function from the Youtube turorials and p5.js references.
+
 # The recreation of the artwork 'Falling Falling'
 
 Here are the comments of my understanding to 'Falling Falling'
