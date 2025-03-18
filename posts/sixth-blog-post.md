@@ -7,3 +7,7 @@ allow_math: true
 ---
 
 # This is a revisit of the work by Rafael Rozendaal and how he did that in a cute way.
+
+1. visually
+2. sonically
+3. interactively
