@@ -35,7 +35,7 @@ I've now added a colour gradient to the previous one to make it look a bit cuter
 
 </script>
 
-## Chatgpt, Claude and Deepseek are the tools to help me understand the meaning of the code. And I also learn some of the function from the Youtube turorials and p5.js references.
+Chatgpt, Claude and Deepseek are the tools to help me understand the meaning of the code. And I also learn some of the function from the Youtube turorials and p5.js references.
 
 # The recreation of the artwork 'Falling Falling'
 
