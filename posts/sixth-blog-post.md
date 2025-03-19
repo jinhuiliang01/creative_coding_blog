@@ -16,9 +16,21 @@ I chose his work "Only Suddenly".
 
 # This is how I plan to achieve my assignment 1
 
-1. Visually: I plan to continue the way of what I have done with my assignment 1. The colour using I think is cute though, they are all light colours.
+1. Visually: I plan to continue the way of what I have done with my assignment 1. The colour using I think is cute though, they are all light colours. And I also remove the black stroke which makes it cuter.
 2. Sonically: I plan to add some sound effect when clicking the mouse.
 3. Interactively: I plan to take the feedback from my collegue Mataso. He thinks if I can heart beat with my mouse press would be better. I would try to do that.
+
+![an update of my assignment 1](/w03s1/upgrade_1.png)
+
+<iframe id="assignment 1 upgrade" src="https://editor.p5js.org/jinhuiliang01/sketches/WNEkhGd3c"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`assignment 1 upgrade`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
 
 # These are some feedbacks from my collegue
 
