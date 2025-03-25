@@ -48,7 +48,7 @@ This one is my artwork about high effective complexity.
 </script>
 
 In my third example, the concept I use is about creating different patterns but lay in order, triangle face to different angle. For code, I use these codes:
-![screenshot of the code](/w04s1/screenshot1.png)
+![screenshot of the code](/w04s1/screenshot1.jpg)
 These code help me create chaotic and odered elements.
 
 # Discuss the work about the artist I picked.
