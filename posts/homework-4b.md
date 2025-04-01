@@ -30,7 +30,7 @@ allow_math: true
       img_data = cnv.toDataURL ("image/jpeg")
       add_glitch ()
    }
-   img.src = `/static/wo4s2/self-portrait.JPG`
+   img.src = `/wo4s2/self-portrait.JPG`
 
    const rand_int = max => Math.floor (Math.random () * max)
 
