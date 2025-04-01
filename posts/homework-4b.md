@@ -73,7 +73,7 @@ allow_math: true
 
 </script>
 
-````<!-- Canvas element where the glitch effect will be displayed -->
+```<!-- Canvas element where the glitch effect will be displayed -->
 <canvas id="glitch_self_portrait"></canvas>
 
 <script type="module">
@@ -192,7 +192,8 @@ allow_math: true
       // Request the browser to call this function again on next frame
       requestAnimationFrame (draw_frame)
    }
-</script>```
+</script>
+```
 
 # This is an answering of how does rendering my likeness in this way affect its aesthetic register and also refer to the reading.
 
@@ -201,4 +202,3 @@ I argue that employing glitch techniques to transform my self-portrait constitut
 By definition, glitch art entails the intentional utilization of digital or analog malfunctions—such as corrupted files, pixelation, or distorted audio—as artistic mediums. From a philosophical and cultural perspective, such artistic imperfections serve as a critique of technology’s presumed "infallibility," while also celebrating the aesthetic value of flaws. This aligns with post-digital aesthetics, wherein defects humanize otherwise sterile digital environments.
 
 Ultimately, the essence of glitch lies in its capacity to encourage the reimagination of creativity within constrained conditions.
-````
