@@ -27,10 +27,10 @@ allow_math: true
    img.onload = () => {
       cnv.height = cnv.width * (img.height / img.width)
       draw (img)
-      img_data = cnv.toDataURL ("image/JPG")
+      img_data = cnv.toDataURL ("image/jpeg")
       add_glitch ()
    }
-   img.src = `/static/self-portrait.JPG`
+   img.src = `/static/self-portrait.jpg`
 
    const rand_int = max => Math.floor (Math.random () * max)
 
