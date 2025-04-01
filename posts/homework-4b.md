@@ -72,3 +72,11 @@ allow_math: true
    }
 
 </script>
+
+# This is an answering of how does rendering my likeness in this way affect its aesthetic register and also refer to the reading.
+
+I argue that employing glitch techniques to transform my self-portrait constitutes an act of converting technological "failures" into meaningful commentary and striking visual effects. This process deliberately blurs the boundary between error and artistic expression while simultaneously enhancing the image’s dynamism, thereby mitigating its monotony.
+
+By definition, glitch art entails the intentional utilization of digital or analog malfunctions—such as corrupted files, pixelation, or distorted audio—as artistic mediums. From a philosophical and cultural perspective, such artistic imperfections serve as a critique of technology’s presumed "infallibility," while also celebrating the aesthetic value of flaws. This aligns with post-digital aesthetics, wherein defects humanize otherwise sterile digital environments.
+
+Ultimately, the essence of glitch lies in its capacity to encourage the reimagination of creativity within constrained conditions.
