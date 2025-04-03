@@ -16,7 +16,7 @@ allow_math: true
     const h = w * 9 / 16
 
     function setup () {
-        createCanvas (300, 300, P2D, cnv)
+        createCanvas (w, h, P2D, cnv)
     }
 
     function draw () {
