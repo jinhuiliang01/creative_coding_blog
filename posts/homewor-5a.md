@@ -12,6 +12,7 @@ allow_math: true
 
 <script>
     const cnv = document.getElementById ("p5_example")
+    cnv.width = cnv.parentNode.scrollWidth
 
     function setup () {
         createCanvas (300, 300, P2D, cnv)
