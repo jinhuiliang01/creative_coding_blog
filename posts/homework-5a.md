@@ -6,8 +6,6 @@ disable_html_sanitization: true
 allow_math: true
 ---
 
-</html>
-
 # Why I think the artist I picked is post-digital.
 
 https://www.instagram.com/p/C7WnFK2yfd2/?img_index=1
