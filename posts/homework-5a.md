@@ -18,7 +18,9 @@ Graphics and shader processing may use PixiJS to support shader effects. And for
 
 # Use RiTa.js to generate a post-digital poem responding to the work in my blog.
 
-<script src="./script/sketch.js"></script>
+<script src="./script/p5.min.js"></script>
+<script src="./script/rita"></script>
+<script src="./script/grammar.js"></script>
 
 <canvas id="post-digital poem"></canvas>
 
