@@ -34,6 +34,19 @@ function setup() {
   textAlign(CENTER);
   loadFont("Resagokr.otf", (f) => textFont(f, 30));
 
+const cnv = document.getElementById ("p5_example")
+    const w = cnv.parentNode.scrollWidth
+    const h = w * 9 / 16
+
+    function setup () {
+        createCanvas (w, h, P2D, cnv)
+    }
+
+    function draw () {
+        background (`turquoise`)
+        console.log (frameCount)
+    }
+
   grammar = RiTa.grammar(poem); 
 }
 
