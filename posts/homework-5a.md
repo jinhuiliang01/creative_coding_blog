@@ -32,7 +32,7 @@ function setup() {
   textAlign(CENTER);
   loadFont("Resagokr.otf", (f) => textFont(f, 30));
 
-  grammar = RiTa.grammar(poem); // from grammar.js
+  grammar = RiTa.grammar(poem); 
 }
 
 function draw() {
@@ -44,8 +44,6 @@ function draw() {
 
 function mouseReleased() {
   let result = grammar.expand();
-
-  // split on the % char output from the grammar
   lines = result.split("%");
 }
 </script>
