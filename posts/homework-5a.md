@@ -34,7 +34,8 @@ function setup() {
   textAlign(CENTER);
   loadFont("Resagokr.otf", (f) => textFont(f, 30));
 
-const cnv = document.getElementById ("p5_example")
+<canvas id="post-digital_poem"></canvas>
+const cnv = document.getElementById ("post-digital_poem")
     const w = cnv.parentNode.scrollWidth
     const h = w * 9 / 16
 
