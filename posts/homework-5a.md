@@ -22,18 +22,7 @@ Graphics and shader processing may use PixiJS to support shader effects. And for
 <script src="./script/rita"></script>
 <script src="./script/grammar.js"></script>
 
-<canvas id="post-digital poem"></canvas>
-
 <script>
-    const cnv = document.getElementById ("post-digital poem")
-    let font, grammar, json;
-let lines = ["click to", "generate", "a post-digital poem"];
-
-function setup() {
-  createCanvas(650, 200);
-  textAlign(CENTER);
-  loadFont("Resagokr.otf", (f) => textFont(f, 30));
-
 <canvas id="post-digital_poem"></canvas>
 const cnv = document.getElementById ("post-digital_poem")
     const w = cnv.parentNode.scrollWidth
@@ -47,6 +36,17 @@ const cnv = document.getElementById ("post-digital_poem")
         background (`turquoise`)
         console.log (frameCount)
     }
+</script>
+
+<script>
+    const cnv = document.getElementById ("post-digital poem")
+    let font, grammar, json;
+let lines = ["click to", "generate", "a post-digital poem"];
+
+function setup() {
+  createCanvas(650, 200);
+  textAlign(CENTER);
+  loadFont("Resagokr.otf", (f) => textFont(f, 30));
 
   grammar = RiTa.grammar(poem); 
 }
