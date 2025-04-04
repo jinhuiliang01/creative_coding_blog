@@ -1,4 +1,4 @@
-let haiku = {
+let poem = {
   start: "$5line.ucf() % $7plus5",
   "5line": "the $nnnn | $nnnnn | $vp4 again",
   "7plus5": "[I wake and look for water % $vp5] | [$12sen $tree]",
