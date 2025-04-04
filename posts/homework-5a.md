@@ -39,7 +39,6 @@ const cnv = document.getElementById ("post-digital_poem")
 </script>
 
 <script>
-    const cnv = document.getElementById ("post-digital poem")
     let font, grammar, json;
 let lines = ["click to", "generate", "a post-digital poem"];
 
