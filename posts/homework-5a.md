@@ -17,3 +17,12 @@ I picked Minnie's work of 'The Meta Rose Project' and I think it is post-digital
 Graphics and shader processing may use PixiJS to support shader effects. And for interaction and animation she may use Anime.js to help her do the complex sequences through this lightweight animation library. And probably she would use p5.js which is a creative coding library to simplify graphics programming.
 
 # Use RiTa.js to generate a post-digital poem responding to the work in my blog.
+
+<script src="./script/sketch.js"></script>
+
+<canvas id="post-digital poem"></canvas>
+
+<script>
+    const cnv = document.getElementById ("post-digital poem")
+    
+</script>
