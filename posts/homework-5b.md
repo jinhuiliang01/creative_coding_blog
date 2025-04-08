@@ -17,7 +17,6 @@ allow_math: true
     const width = container.parentNode.scrollWidth
     const height = width * 9 / 16
 
-import * as THREE from 'three';
 
 			import { OrbitControls } from '/250408/three.js-master/docs/examples/ko/controls/OrbitControls.js';
 			import { GUI } from '/250408/three.js-master/examples/jsm/libs/lil-gui.module.min.js';
