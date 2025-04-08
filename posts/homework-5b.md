@@ -19,11 +19,11 @@ allow_math: true
 
 import * as THREE from 'three';
 
-			import { OrbitControls } from '250408/three.js-master/docs/examples/ko/controls/OrbitControls.js';
-			import { GUI } from '250408/three.js-master/examples/jsm/libs/lil-gui.module.min.js';
+			import { OrbitControls } from '/250408/three.js-master/docs/examples/ko/controls/OrbitControls.js';
+			import { GUI } from '/250408/three.js-master/examples/jsm/libs/lil-gui.module.min.js';
 
-			import { GLTFLoader } from '250408/three.js-master/docs/examples/zh/loaders/GLTFLoader.js';
-			import { RGBELoader } from '250408/three.js-master/examples/jsm/loaders/RGBELoader.js';
+			import { GLTFLoader } from '/250408/three.js-master/docs/examples/zh/loaders/GLTFLoader.js';
+			import { RGBELoader } from '/250408/three.js-master/examples/jsm/loaders/RGBELoader.js';
 
 			let scene, renderer, camera, floor, orbitControls;
 			let group, followGroup, model, skeleton, mixer, clock;
@@ -122,7 +122,7 @@ import * as THREE from 'three';
 				// DEMO
 
 				new RGBELoader()
-					.setPath( 'textures/equirectangular/' )
+					.setPath( '/250408/three.js-master/examples/textures/equirectangular/' )
 					.load( 'lobe.hdr', function ( texture ) {
 
 						texture.mapping = THREE.EquirectangularReflectionMapping;
@@ -143,13 +143,13 @@ import * as THREE from 'three';
 
 				const maxAnisotropy = renderer.capabilities.getMaxAnisotropy();
 
-				const floorT = new THREE.TextureLoader().load( 'textures/floors/FloorsCheckerboard_S_Diffuse.jpg' );
+				const floorT = new THREE.TextureLoader().load( '/250408/three.js-master/examples/textures/floors/FloorsCheckerboard_S_Diffuse.jpg' );
 				floorT.colorSpace = THREE.SRGBColorSpace;
 				floorT.repeat.set( repeat, repeat );
 				floorT.wrapS = floorT.wrapT = THREE.RepeatWrapping;
 				floorT.anisotropy = maxAnisotropy;
 
-				const floorN = new THREE.TextureLoader().load( 'textures/floors/FloorsCheckerboard_S_Normal.jpg' );
+				const floorN = new THREE.TextureLoader().load( '/250408/three.js-master/examples/textures/floors/FloorsCheckerboard_S_Normal.jpg' );
 				floorN.repeat.set( repeat, repeat );
 				floorN.wrapS = floorN.wrapT = THREE.RepeatWrapping;
 				floorN.anisotropy = maxAnisotropy;
@@ -179,7 +179,7 @@ import * as THREE from 'three';
 			function loadModel() {
 
 				const loader = new GLTFLoader();
-				loader.load( '250408/three.js-master/examples/models/gltf/Soldier.glb', function ( gltf ) {
+				loader.load( '/250408/three.js-master/examples/models/gltf/Soldier.glb', function ( gltf ) {
 
 
 					model = gltf.scene;
