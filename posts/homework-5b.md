@@ -58,7 +58,6 @@ allow_math: true
 
 			function init() {
 
-				const container = document.getElementById( 'container' );
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 100 );
 				camera.position.set( 0, 2, - 5 );
