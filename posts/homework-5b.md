@@ -18,10 +18,10 @@ allow_math: true
     const height = width * 9 / 16
 
 
-			import { OrbitControls } from '/250408/three.js-master/docs/examples/ko/controls/OrbitControls.js';
+			import { OrbitControls } from '/250408/three.js-master/docs/examples/ko/controls/OrbitControls.html';
 			import { GUI } from '/250408/three.js-master/examples/jsm/libs/lil-gui.module.min.js';
 
-			import { GLTFLoader } from '/250408/three.js-master/docs/examples/zh/loaders/GLTFLoader.js';
+			import { GLTFLoader } from '/250408/three.js-master/docs/examples/zh/loaders/GLTFLoader.html';
 			import { RGBELoader } from '/250408/three.js-master/examples/jsm/loaders/RGBELoader.js';
 
 			let scene, renderer, camera, floor, orbitControls;
