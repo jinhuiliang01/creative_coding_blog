@@ -445,3 +445,14 @@ function resizeContainer(width, height) {
 </html>
 
 # Think about the questions about glitch art by Sabato Visconti.
+
+1. What does having the 3D form glitch out like this do in terms of aesthetic register, and effective complexity?
+
+In terms of aesthetic register, I think the persistence of the rose, its unnatural deformation and the sharp shifts between angles suggest deliberate damage or malfunction. It lies somewhere between the natural and the artificial, giving it a disturbing and unfamiliar aesthetic.
+And also I think it maybe have a symbolic representation. Because black rose symbolizes death, mystery thing. The malfunctioning effect makes it even more grotesque, turning the flower into something lively but unstable, which may indicate decay.
+
+And in terms of effective complexity, I think the shape of the rose is still recognisable and therefore has a consistent structure. However, rotational jumps and unexpected deformations bring unpredictability and layered interpretations. The work thus achieves the optimal balance of effective complexity: ‘we see a flower’ to lay its foundation, but with enough surprise to provoke curiosity or discomfort.
+
+2. How do you think it works, under the hood?
+
+The flower is likely to be in the form of a low polygonal 3D object with a stylised material. It may have been rendered in Blender or similar software, where the rotating keyframes were disrupted or deliberately exported in a discontinuous order, because instead of moving slowly between angles, it jumped then causing a glitchy feel.
