@@ -1,10 +1,39 @@
 ---
 title: Homework 5b
 published_at: 2025-04-08
-snippet: My homework 5b.
+snippet: Implement a three.js example directly in my blog. And think about the questions about glitch art by Sabato Visconti.
 disable_html_sanitization: true
 allow_math: true
 ---
+
+# Implement a three.js example directly in my blog.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Three.js Character Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #three-container {
+            position: relative;
+        }
+        canvas {
+            display: block;
+            margin: -250px auto -250px -500px;
+            transform: scale(0.4);
+            transform-origin: center center;
+        }
+    </style>
+</head>
+<body>
 
 <div id="three.js_container"></div>
 
@@ -13,10 +42,11 @@ allow_math: true
 
     console.log(THREE)
 
-    const container = document.getElementById(`three.js_container`)
-    const width = container.parentNode.scrollWidth
-    const height = width * 9 / 16
-
+    const container = document.getElementById(`three.js_container`);
+    //container.style.overflow = `hidden`;
+    //container.width = `window.innerWidth`;
+    //container.height = `auto`; 
+   
 
 			import { OrbitControls } from '/250408/three.js-master/examples/jsm/controls/OrbitControls.js';
 			import { GUI } from '/250408/three.js-master/examples/jsm/libs/lil-gui.module.min.js';
@@ -60,7 +90,7 @@ allow_math: true
 
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 100 );
-				camera.position.set( 0, 2, - 5 );
+                camera.position.set( 0, 2, - 5 );
 				//camera.lookAt( 0, 1, 0 );
 
 
@@ -101,7 +131,7 @@ allow_math: true
 				renderer.toneMapping = THREE.ACESFilmicToneMapping;
 				renderer.toneMappingExposure = 0.5;
 				renderer.shadowMap.enabled = true;
-				container.appendChild( renderer.domElement );
+		    	container.appendChild( renderer.domElement );
 
 				orbitControls = new OrbitControls( camera, renderer.domElement );
 				orbitControls.target.set( 0, 1, 0 );
@@ -112,7 +142,7 @@ allow_math: true
 
 				// EVENTS
 
-				window.addEventListener( 'resize', onWindowResize );
+				//window.addEventListener( 'resize', onWindowResize );
 				document.addEventListener( 'keydown', onKeyDown );
 				document.addEventListener( 'keyup', onKeyUp );
 
@@ -182,8 +212,12 @@ allow_math: true
 
 					model = gltf.scene;
 					group.add( model );
-					model.rotation.y = PI;
-					group.rotation.y = PI;
+					
+                    model.position.set( 0, 0, 0 );
+                    model.rotation.y = PI;
+                    group.rotation.y = PI;
+                    group.position.set( 0, 0, 0 );
+
 
 					model.traverse( function ( object ) {
 
@@ -308,7 +342,7 @@ allow_math: true
 		            group.position.copy( position );
 		            group.quaternion.rotateTowards( rotate, controls.rotateSpeed );
 
-		            orbitControls.target.copy( position ).add({x:0, y:1, z:0});
+		            orbitControls.target.copy(position).add(new THREE.Vector3(0, 1, 0));
 		            followGroup.position.copy( position );
 
 		            // decale floor at infinie
@@ -371,13 +405,26 @@ allow_math: true
 
 			}
 
-			function onWindowResize() {
+function resizeContainer(width, height) {
+    // Get the container element
+    const container = document.getElementById('three-container');
 
-				camera.aspect = window.innerWidth / window.innerHeight;
-				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth, window.innerHeight );
+    // Set each style property individually
+    container.style.position = "relative";
+    container.style.width = width + 'px';
+    container.style.height = height + 'px';
+    container.style.overflow = "visible";
 
-			}
+    // Update the renderer size to match
+    renderer.setSize(width, height, true);
+
+    // Update camera
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+}
+
+
+
 
 			function animate() {
 
@@ -394,3 +441,7 @@ allow_math: true
 			}
 
 </script>
+</body>
+</html>
+
+# Think about the questions about glitch art by Sabato Visconti.
