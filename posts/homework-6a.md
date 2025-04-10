@@ -1,7 +1,7 @@
 ---
 title: Homework 6a
 published_at: 2025-04-10
-snippet: Answer the questions of javascript libiaries. Use one of the libraries to demonstrate how to use a signal or envelope to make something change over time. And give a brief summary of the texts.
+snippet: Answer the questions of javascript libiaries. Use one of the libraries to demonstrate how to use a signal or envelope to make something change over time. And give a brief summary of the articles.
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -77,3 +77,14 @@ This animation shows how an envelope can be used to control the size of a circle
     text("t = " + nf(t, 1, 2), width / 2, height - 20);
   }
 </script>
+
+# Give a brief summary of the articles.
+
+1. Information & Thinking by Michel Serres
+   This text talks about how our brains and the way we think are changing because of technology. Michel Serres says we used to keep lots of info in our heads, but now we use phones and computers to remember stuff for us. It’s like our brains are becoming more about how we think, not just what we know. He compares it to learning how to play an instrument versus just reading about music.
+
+2. What Is It Like to Be a Fungus? by Merlin Sheldrake
+   This text explores the weird and amazing world of fungi—those things like mushrooms and mold. Merlin Sheldrake says fungi live in networks underground, almost like the internet, and they might even "communicate" in strange ways. He asks, what if being a fungus is totally different from being an animal or a human? It makes us rethink what life and intelligence really are.
+
+3. Xenofeminism: A Politics for Alienation by Laboria Cuboniks
+   This text says we can use science and technology to make the world fairer for everyone, especially for people who are often left out. The writers believe we shouldn’t be afraid to change things like gender roles or even biology if it helps people be more free. They want to "hack" the system to make it better.
