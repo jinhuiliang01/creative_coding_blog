@@ -32,37 +32,27 @@ But this may work in a module:
 
 # Use one of the libraries to demonstrate how to use a signal or envelope to make something change over time.
 
-import { sketch, circle, Sin } from "https://cdn.skypack.dev/c2";
+# Using Signals in C2.js
 
-sketch(({ wrap }) => {
-// Create a sine wave signal with a period of 200 frames
-const wave = Sin(200);
+<div id="canvas-container"></div>
 
-wrap(() => {
-background("black");
+<script type="module">
+  import { sketch, circle, Sin } from "https://cdn.skypack.dev/c2";
 
-    // Update the wave
-    wave.next();
+  sketch(({ wrap }) => {
+    const wave = Sin(200);
 
-    // Get the signal value (range: -1 to 1)
-    const signal = wave.value();
-
-    // Map signal value to radius (e.g., from 50 to 150)
-    const radius = map(signal, -1, 1, 50, 150);
-
-    // Draw a circle at the center, changing size over time
-    fill("cyan");
-    noStroke();
-    circle(width / 2, height / 2, radius);
-
-});
-});
-
-Sin(200) creates a repeating sine wave with a cycle that takes 200 frames.
-wave.next() updates the signal each frame.
-wave.value() returns a number between -1 and 1, like a standard sine wave.
-I map this value to a usable range for our animation — in this case, to a circle radius.
-wrap is the drawing loop in C2.js, like draw() in p5.js.
+    wrap(() => {
+      background("black");
+      wave.next();
+      const signal = wave.value();
+      const radius = map(signal, -1, 1, 50, 150);
+      fill("cyan");
+      noStroke();
+      circle(width / 2, height / 2, radius);
+    });
+  }, document.getElementById("canvas-container"));
+</script>
 
 # Give a brief summary of the articles.
 
