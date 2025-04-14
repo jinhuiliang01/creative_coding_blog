@@ -38,16 +38,12 @@ But this may work in a module:
 
 <script src="https://cdn.jsdelivr.net/npm/c2@latest/dist/c2.min.js"></script>
 <script>
-  // Wait for both the DOM and c2.js to load
   document.addEventListener('DOMContentLoaded', function() {
-    // Check if c2 is available, if not wait a bit
     function checkC2() {
       if (typeof c2 === 'undefined') {
         setTimeout(checkC2, 100);
         return;
       }
-      
-      // Now c2 is available
       let frame = 0;
       c2.sketch(({ wrap }) => {
         wrap(() => {
@@ -61,7 +57,6 @@ But this may work in a module:
         });
       }, document.getElementById("c2-canvas"));
     }
-    
     checkC2();
   });
 </script>
