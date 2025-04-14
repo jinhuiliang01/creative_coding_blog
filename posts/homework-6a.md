@@ -38,7 +38,7 @@ But this may work in a module:
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
 
-<script src="https://unpkg.com/c2/c2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/c2@0.1.22/+esm"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
