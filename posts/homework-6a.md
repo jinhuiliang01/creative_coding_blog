@@ -32,51 +32,37 @@ But this may work in a module:
 
 # Use one of the libraries to demonstrate how to use a signal or envelope to make something change over time.
 
-Animate a circle's size using an envelope (like a fade in/out)
+import { sketch, circle, Sin } from "https://cdn.skypack.dev/c2";
 
-### Envelope-Based Circle Animation in p5.js
+sketch(({ wrap }) => {
+// Create a sine wave signal with a period of 200 frames
+const wave = Sin(200);
 
-This animation shows how an envelope can be used to control the size of a circle.
+wrap(() => {
+background("black");
 
-<div id="sketch-container"></div>
+    // Update the wave
+    wave.next();
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
-<script>
-  let startTime;
-  let duration = 4000;
-  let radius = 0;
+    // Get the signal value (range: -1 to 1)
+    const signal = wave.value();
 
-  function setup() {
-    let cnv = createCanvas(400, 400);
-    cnv.parent('sketch-container');
-    startTime = millis();
-  }
+    // Map signal value to radius (e.g., from 50 to 150)
+    const radius = map(signal, -1, 1, 50, 150);
 
-  function draw() {
-    background(30);
-    let elapsed = millis() - startTime;
-    let t = elapsed / duration;
-
-    if (t < 0.25) {
-      radius = map(t, 0, 0.25, 0, 100);
-    } else if (t < 0.5) {
-      radius = map(t, 0.25, 0.5, 100, 60);
-    } else if (t < 0.75) {
-      radius = 60;
-    } else if (t < 1) {
-      radius = map(t, 0.75, 1, 60, 0);
-    } else {
-      startTime = millis();
-    }
-
-    fill(100, 200, 255);
+    // Draw a circle at the center, changing size over time
+    fill("cyan");
     noStroke();
-    ellipse(width / 2, height / 2, radius * 2, radius * 2);
-    fill(255);
-    textAlign(CENTER);
-    text("t = " + nf(t, 1, 2), width / 2, height - 20);
-  }
-</script>
+    circle(width / 2, height / 2, radius);
+
+});
+});
+
+Sin(200) creates a repeating sine wave with a cycle that takes 200 frames.
+wave.next() updates the signal each frame.
+wave.value() returns a number between -1 and 1, like a standard sine wave.
+I map this value to a usable range for our animation — in this case, to a circle radius.
+wrap is the drawing loop in C2.js, like draw() in p5.js.
 
 # Give a brief summary of the articles.
 
