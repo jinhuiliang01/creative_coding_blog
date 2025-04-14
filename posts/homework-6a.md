@@ -40,7 +40,7 @@ But this may work in a module:
 
 <script src="https://cdn.jsdelivr.net/npm/c2@0.1.22/+esm"></script>
 
-<script>
+<script type="module">
   document.addEventListener('DOMContentLoaded', function() {
     function checkC2() {
       if (typeof c2 === 'undefined') {
