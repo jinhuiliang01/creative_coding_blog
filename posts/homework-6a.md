@@ -37,20 +37,19 @@ But this may work in a module:
 <canvas id="myCanvas"></canvas>
 
 <script type="module">
-  import { sketch, circle } from "https://cdn.skypack.dev/c2";
+  import { sketch } from "https://cdn.skypack.dev/c2";
 
-  // Manual sine signal
   let frame = 0;
 
   sketch(({ wrap }) => {
     wrap(() => {
-      background("black");
-      frame++;
+      // Drawing functions like background, fill, circle, etc. are in scope here
 
-      // Create sine wave value manually
-      const signal = Math.sin((frame / 200) * Math.PI * 2);
+      frame++;
+      const signal = Math.sin((frame / 200) * Math.PI * 2); // sine wave
       const radius = map(signal, -1, 1, 50, 150);
 
+      background("black");
       fill("cyan");
       noStroke();
       circle(width / 2, height / 2, radius);
