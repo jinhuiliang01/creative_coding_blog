@@ -34,28 +34,35 @@ But this may work in a module:
 
 # Using Signals in C2.js
 
-<canvas id="myCanvas"></canvas>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>C2 Signal Animation</title>
+    <script src="https://unpkg.com/c2/c2.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <script>
+      let frame = 0;
 
-<script type="module">
-  import { sketch } from "https://cdn.skypack.dev/c2";
+      c2.sketch(({ wrap }) => {
+        wrap(() => {
+          frame++;
 
-  let frame = 0;
+          // Create a sine wave between -1 and 1
+          const signal = Math.sin((frame / 200) * Math.PI * 2);
+          const radius = c2.map(signal, -1, 1, 50, 150);
 
-  sketch(({ wrap }) => {
-    wrap(() => {
-      // Drawing functions like background, fill, circle, etc. are in scope here
+          c2.background("black");
+          c2.fill("cyan");
+          c2.noStroke();
+          c2.circle(c2.width / 2, c2.height / 2, radius);
+        });
+      });
+    </script>
 
-      frame++;
-      const signal = Math.sin((frame / 200) * Math.PI * 2); // sine wave
-      const radius = map(signal, -1, 1, 50, 150);
-
-      background("black");
-      fill("cyan");
-      noStroke();
-      circle(width / 2, height / 2, radius);
-    });
-  }, document.getElementById("myCanvas"));
-</script>
+  </body>
+</html>
 
 # Give a brief summary of the articles.
 
