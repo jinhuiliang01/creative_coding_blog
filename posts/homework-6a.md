@@ -32,39 +32,146 @@ But this may work in a module:
 
 # Use one of the libraries to demonstrate how to use a signal or envelope to make something change over time.
 
-# Using Signals in C2.js
+Using Signals in C2.js
 
-<canvas id="c2-canvas" width="600" height="400" style="display:block; margin:auto;"></canvas>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/c2@0.1.22/+esm"></script>
-
-<script type="module">
-  document.addEventListener('DOMContentLoaded', function() {
-    function checkC2() {
-      if (typeof c2 === 'undefined') {
-        setTimeout(checkC2, 100);
-        return;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C2.js Animation</title>
+  <script src="/250414/p5.min.js"></script>
+  <script src="/250414/c2/c2.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+    }
+    #c2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: auto;
+    }
+    canvas {
+      display: block;
+      background: white; 
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+  </style>
+</head>
+<body>
+  <div id="c2-container"></div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      function checkLibs() {
+        if (typeof p5 === 'undefined' || typeof c2 === 'undefined') {
+          setTimeout(checkLibs, 100);
+          return;
+        }
+        
+        const sketch = function(p) {
+          let frame = 0;
+          
+          p.setup = function() {
+            const canvas = p.createCanvas(600, 400);
+            // Keep white background persistent
+            p.background("white");
+          };
+          
+          p.draw = function() {
+            frame++;
+            const signal = p.sin(frame / 200 * p.PI * 2);
+            const radius = p.map(signal, -1, 1, 50, 150);
+            
+            // Clear only the circle area (for smooth animation)
+            p.fill(255); // White
+            p.noStroke();
+            p.rect(0, 0, p.width, p.height);
+            
+            // Draw the animated circle
+            p.fill("cyan");
+            p.circle(p.width/2, p.height/2, radius);
+          };
+        };
+        
+        new p5(sketch, 'c2-container');
       }
       
-      let frame = 0;
-      c2.sketch(({ wrap }) => {
-        wrap(() => {
-          frame++;
-          const signal = Math.sin((frame / 200) * Math.PI * 2);
-          const radius = c2.map(signal, -1, 1, 50, 150);
-          c2.background("black");
-          c2.fill("cyan");
-          c2.noStroke();
-          c2.circle(c2.width / 2, c2.height / 2, radius);
-        });
-      }, document.getElementById("c2-canvas"));
+      checkLibs();
+    });
+  </script>
+</body>
+</html>
+
+```<!DOCTYPE html>
+<html>
+<head>
+  <title>C2.js Animation</title>
+  <script src="/250414/p5.min.js"></script>
+  <script src="/250414/c2/c2.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: white;
     }
-    
-    checkC2();
-  });
-</script>
+    #c2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: auto;
+    }
+    canvas {
+      display: block;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="c2-container"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      function checkLibs() {
+        if (typeof p5 === 'undefined' || typeof c2 === 'undefined') {
+          setTimeout(checkLibs, 100);
+          return;
+        }
+
+        const sketch = function(p) {
+          let frame = 0;
+
+          p.setup = function() {
+            const canvas = p.createCanvas(600, 400);
+            // Keep white background persistent
+            p.background("white");
+          };
+
+          p.draw = function() {
+            frame++;
+            const signal = p.sin(frame / 200 * p.PI * 2);
+            const radius = p.map(signal, -1, 1, 50, 150);
+
+            // Clear only the circle area (for smooth animation)
+            p.fill(255); // White
+            p.noStroke();
+            p.rect(0, 0, p.width, p.height);
+
+            // Draw the animated circle
+            p.fill("cyan");
+            p.circle(p.width/2, p.height/2, radius);
+          };
+        };
+
+        new p5(sketch, 'c2-container');
+      }
+
+      checkLibs();
+    });
+  </script>
+</body>
+</html>
+```
 
 # Give a brief summary of the articles.
 
