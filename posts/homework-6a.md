@@ -34,24 +34,36 @@ But this may work in a module:
 
 # Using Signals in C2.js
 
-<div style="width:600px;margin:0 auto;">
-  <canvas id="c2-canvas" width="600" height="400"></canvas>
-</div>
+<canvas id="c2-canvas" width="600" height="400" style="display:block; margin:auto;"></canvas>
 
-<script src="https://unpkg.com/c2/c2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/c2@latest/dist/c2.min.js"></script>
 <script>
-  let frame = 0;
-  c2.sketch(({ wrap }) => {
-    wrap(() => {
-      frame++;
-      const signal = Math.sin((frame / 200) * Math.PI * 2);
-      const radius = c2.map(signal, -1, 1, 50, 150);
-      c2.background("black");
-      c2.fill("cyan");
-      c2.noStroke();
-      c2.circle(c2.width / 2, c2.height / 2, radius);
-    });
-  }, document.getElementById("c2-canvas"));
+  // Wait for both the DOM and c2.js to load
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if c2 is available, if not wait a bit
+    function checkC2() {
+      if (typeof c2 === 'undefined') {
+        setTimeout(checkC2, 100);
+        return;
+      }
+      
+      // Now c2 is available
+      let frame = 0;
+      c2.sketch(({ wrap }) => {
+        wrap(() => {
+          frame++;
+          const signal = Math.sin((frame / 200) * Math.PI * 2);
+          const radius = c2.map(signal, -1, 1, 50, 150);
+          c2.background("black");
+          c2.fill("cyan");
+          c2.noStroke();
+          c2.circle(c2.width / 2, c2.height / 2, radius);
+        });
+      }, document.getElementById("c2-canvas"));
+    }
+    
+    checkC2();
+  });
 </script>
 
 # Give a brief summary of the articles.
