@@ -36,7 +36,10 @@ But this may work in a module:
 
 <canvas id="c2-canvas" width="600" height="400" style="display:block; margin:auto;"></canvas>
 
-<script src="https://cdn.jsdelivr.net/npm/c2@latest/dist/c2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+
+<script src="https://unpkg.com/c2/c2.js"></script>
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     function checkC2() {
@@ -44,6 +47,7 @@ But this may work in a module:
         setTimeout(checkC2, 100);
         return;
       }
+      
       let frame = 0;
       c2.sketch(({ wrap }) => {
         wrap(() => {
@@ -57,6 +61,7 @@ But this may work in a module:
         });
       }, document.getElementById("c2-canvas"));
     }
+    
     checkC2();
   });
 </script>
