@@ -34,35 +34,23 @@ But this may work in a module:
 
 # Using Signals in C2.js
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>C2 Signal Animation</title>
-    <script src="https://unpkg.com/c2/c2.js"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden">
-    <script>
-      let frame = 0;
+<canvas id="c2-canvas"></canvas>
 
-      c2.sketch(({ wrap }) => {
-        wrap(() => {
-          frame++;
-
-          // Create a sine wave between -1 and 1
-          const signal = Math.sin((frame / 200) * Math.PI * 2);
-          const radius = c2.map(signal, -1, 1, 50, 150);
-
-          c2.background("black");
-          c2.fill("cyan");
-          c2.noStroke();
-          c2.circle(c2.width / 2, c2.height / 2, radius);
-        });
-      });
-    </script>
-
-  </body>
-</html>
+<script src="https://unpkg.com/c2/c2.js"></script>
+<script>
+  let frame = 0;
+  c2.sketch(({ wrap }) => {
+    wrap(() => {
+      frame++;
+      const signal = Math.sin((frame / 200) * Math.PI * 2);
+      const radius = c2.map(signal, -1, 1, 50, 150);
+      c2.background("black");
+      c2.fill("cyan");
+      c2.noStroke();
+      c2.circle(c2.width / 2, c2.height / 2, radius);
+    });
+  }, document.getElementById("c2-canvas"));
+</script>
 
 # Give a brief summary of the articles.
 
