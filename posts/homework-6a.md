@@ -34,9 +34,12 @@ But this may work in a module:
 
 # Using Signals in C2.js
 
-<script src="https://unpkg.com/c2/c2.js"></script>
+<canvas id="c2-canvas" width="600" height="400" style="display:block; margin:auto;"></canvas>
+
 <script>
-  window.onload = () => {
+  const script = document.createElement('script');
+  script.src = "https://unpkg.com/c2/c2.js";
+  script.onload = () => {
     let frame = 0;
     c2.sketch(({ wrap }) => {
       wrap(() => {
@@ -50,6 +53,7 @@ But this may work in a module:
       });
     }, document.getElementById("c2-canvas"));
   };
+  document.body.appendChild(script);
 </script>
 
 # Give a brief summary of the articles.
