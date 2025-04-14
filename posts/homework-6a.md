@@ -37,7 +37,7 @@ Using Signals in C2.js
 <!DOCTYPE html>
 <html>
 <head>
-  <title>C2.js Animation</title>
+  <title>Homework 6a</title>
   <script src="/250414/p5.min.js"></script>
   <script src="/250414/c2/c2.min.js"></script>
   <style>
