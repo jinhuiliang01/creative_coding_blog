@@ -155,6 +155,15 @@ I choose the techniques of recurtion, signals / envelopes and q5.js / c2.js / sv
 
 3. Combine the passages and techniques I have chosen into a rudimentary rough draft for my AT2
 
+"Thinking means inventing" (Signals/Envelopes + p5.js)
+Idea: Simulate the rarity of true ideas in a noisy world.
+
+Use p5.js to generate a chaotic "noise field" (random particles = ads, news, distractions).
+
+Introduce signals (sudden bursts of geometric shapes) that pierce the noise. Each signal follows an envelope (attack/decay) to symbolize fleeting moments of clarity.
+
+Interaction: Users "invent" by dragging to connect signals into rare, coherent forms (e.g., a polygon that quiets the noise around it).
+
 # Once I have my rough draft of my assignment 2, solicit some critical, constructive feedback from three colleagues.
 
 # Use these responses to devise a plan for the next phase of my AT2 project.
