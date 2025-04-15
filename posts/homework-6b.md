@@ -154,3 +154,13 @@ Truth isn’t just one bright, harsh thing. It’s more like stars—many little
 I choose the techniques of recurtion, signals / envelopes and q5.js / c2.js / svg.js
 
 3. Combine the passages and techniques I have chosen into a rudimentary rough draft for my AT2
+
+Dark background with "truth gems" (SVG polygons) that glow via envelope-controlled opacity.
+
+Each gem’s edges connect to others via faint lines (c2.js for physics-based connections).
+
+Interaction: Clicking a gem amplifies its light but dims neighbors (critique of "exclusive light").
+
+# Once I have my rough draft of my assignment 2, solicit some critical, constructive feedback from three colleagues.
+
+# Use these responses to devise a plan for the next phase of my AT2 project.
