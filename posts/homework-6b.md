@@ -6,7 +6,7 @@ disable_html_sanitization: true
 allow_math: true
 ---
 
-# This is the shader work
+# This is the moire and shader work
 
 <div id="moire_circles"></div>
 
