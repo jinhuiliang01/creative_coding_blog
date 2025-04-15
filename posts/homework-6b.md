@@ -1,7 +1,7 @@
 ---
 title: Homework 6b
 published_at: 2025-04-15
-snippet: Homwork tasks.
+snippet: Implement a simple shader in my blog, respond some questions of my assignment 2. Once I have my rough draft of my assignment 2, solicit some critical, constructive feedback from three colleagues.
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -129,3 +129,28 @@ renderer.setAnimationLoop(time => {
 // Render code block
 codeblockRenderer(document, "moire_circles_script", "moire_circles_code")
 </script>
+
+# Respond some questions about my assignment 2.
+
+1. Pick three passages from the text that speak to you the loudest
+
+(1). "We are not so exceptional; we are not the only ones endowed with the capability to see, read or write..."
+(Page 4, Chapter Two)\
+Reason:
+It reminds us that humans aren’t the only "smart" things in the universe. Nature "talks" too—like wind shaping dunes or trees marking time in their rings. It’s a beautiful way to see the world as full of meaning, not just because of us.
+
+(2). "Thinking means inventing: getting hold of rarity, discovering the secret of that which has the huge and contingent chance to exist..."
+(Page 2, Chapter Two)\
+Reason:
+Real thinking isn’t just repeating what we already know—it’s about creating something new and rare. In a world full of noise (like news and ads), true ideas are like hidden treasures waiting to be found.
+
+(3). "The night with its countless truths resembles the high cave and its shining gems... a better model of knowledge than the sun-struck, cruel, exclusive light of day."
+(Page 6, Chapter Two)\
+Reason:
+Truth isn’t just one bright, harsh thing. It’s more like stars—many little lights, each different, twinkling in the dark. This feels fairer and more honest than pretending one big idea explains everything.
+
+2. Pick at least two techniques we have covered over the course of this unit
+
+I choose the techniques of recurtion, signals / envelopes and q5.js / c2.js / svg.js
+
+3. Combine the passages and techniques I have chosen into a rudimentary rough draft for my AT2
