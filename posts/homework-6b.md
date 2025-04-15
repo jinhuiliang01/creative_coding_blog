@@ -78,9 +78,9 @@ const shaderMaterial = new THREE.ShaderMaterial({
             vec2 center2 = mousePos;
             
             // Create multiple circle patterns with different frequencies
-            float pattern1 = sin(distance(uv, center1) * 100.0 + u_time * 2.0) * 0.5 + 0.5;
-            float pattern2 = cos(distance(uv, center2) * 80.0 - u_time * 1.5) * 0.5 + 0.5;
-            float pattern3 = sin(distance(uv, center1) * 60.0 + u_time * 3.0) * 0.5 + 0.5;
+           float pattern1 = sin(distance(uv, center1) * 200.0 + u_time * 2.0) * 0.5 + 0.5;
+           float pattern2 = cos(distance(uv, center2) * 180.0 - u_time * 1.5) * 0.5 + 0.5;
+           float pattern3 = sin(distance(uv, center1) * 160.0 + u_time * 3.0) * 0.5 + 0.5;
             
             // Combine patterns in interesting ways
             float moire1 = pattern1 * pattern2;
