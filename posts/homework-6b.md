@@ -135,7 +135,7 @@ I'm going to use q5.js and glitch for my AT2.
 
 I chose the passge number 2 which is about "Thinking means inventing: getting hold of rarity, discovering the secret of that which has the huge and contingent chance to exist...".
 
-The concept came up of my mind is about inventing = creating order from chaos, and discovering Secrets = interaction with the audience, contingent chance = randomness of the order, gold = the value of truth.
+The concept came up of my mind is about inventing = creating order from chaos, and discovering secrets = interaction with the audience, contingent chance = randomness of the order, gold = the value of truth.
 
 I plan to do a clickable canvas where chaotic letters (glitched text) slowly organize into a meaningful phrase when interacted with. Uses glitch effects (easy pixel manipulation) and signals (simple sound feedback).
 
