@@ -163,11 +163,11 @@ This interactive artwork explores how true ideas emerge from a noisy world...
   }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
 </div>
 
-<div class="canvas-wrapper" style="margin: 20px auto; position: relative; top: 50px;">
+<div class="canvas-wrapper" style="margin: 20px auto;">
   <canvas id="myCanvas"></canvas>
 </div>
 
