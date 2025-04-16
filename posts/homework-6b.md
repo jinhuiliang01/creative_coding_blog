@@ -148,30 +148,27 @@ This interactive artwork explores how true ideas emerge from a noisy world...
 
 <style>
   .canvas-wrapper {
-    width: 100%;
-    max-width: 100%;
-    height: 400px; /* Change this number to control how tall it is */
-    margin: 2em 0;
-    border: 1px solid #ccc;
-  }
-
-  #myCanvas {
-    width: 100% !important;
-    height: 100% !important;
-    display: block;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  position: relative;
+  top: 0;  /* Force it to the top of its container */
+}
+  
+  body {
+  margin: auto;
+  padding: 0; 
   }
 </style>
 
-<div style="width: 100%; max-width: 800px; height: 600px; margin: 20px auto; overflow: hidden; border: 1px solid #ccc;">
-  
-  <canvas id="myCanvas"></canvas>
-  
-<div class="canvas-wrapper">
-  <canvas id="myCanvas"></canvas>
-</div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+</div>
+
+<div class="canvas-wrapper" style="margin: 20px auto; position: relative; top: 50px;">
+  <canvas id="myCanvas"></canvas>
 </div>
 
 <script>
