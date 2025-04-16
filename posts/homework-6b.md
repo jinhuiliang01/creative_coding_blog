@@ -9,8 +9,7 @@ allow_math: true
 # This is the moire and shader work
 
 <div id="moire_circles"></div>
-<script id="moire_circles_script"> </script>
-<script type="module">
+<script type="module" id="moire_circles_script">
 import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.174.0/three.module.js" 
 import codeblockRenderer from "/250415/codeblock_renderer.js"
 const div = document.getElementById ("moire_circles")
@@ -147,12 +146,35 @@ Interaction: Users "invent" by dragging to connect signals into rare, coherent f
 
 This interactive artwork explores how true ideas emerge from a noisy world...
 
+<style>
+  .canvas-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: 400px; /* Change this number to control how tall it is */
+    margin: 2em 0;
+    border: 1px solid #ccc;
+  }
+
+  #myCanvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
+</style>
+
 <div style="width: 100%; max-width: 800px; height: 600px; margin: 20px auto; overflow: hidden; border: 1px solid #ccc;">
+  
+  <canvas id="myCanvas"></canvas>
+  
+<div class="canvas-wrapper">
+  <canvas id="myCanvas"></canvas>
+</div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
 </div>
 
-  <script>
+<script>
     // Audio setup
     let synth, pingPong, filter, lowPass;
     let notes = ['C4', 'E4', 'G4', 'B4', 'D5', 'F5', 'A5'];
@@ -174,17 +196,18 @@ This interactive artwork explores how true ideas emerge from a noisy world...
     // Colors
     const BG_COLOR = 20;
     const PARTICLE_COLORS = [
-  [50, 50, 50, 80],     // Darker Gray
-  [30, 30, 150, 80],    // Darker Blue
-  [150, 30, 30, 80],    // Darker Red
-  [30, 150, 30, 80]     // Darker Green
-];
+      [50, 50, 50, 80],     // Darker Gray
+      [30, 30, 150, 80],    // Darker Blue
+      [150, 30, 30, 80],    // Darker Red
+      [30, 150, 30, 80]     // Darker Green
+    ];
     const SIGNAL_COLORS = [
       [255, 200, 100],      // Yellow-orange
       [100, 255, 200],      // Cyan
       [200, 100, 255],      // Purple
       [255, 100, 100]       // Red
     ];
+
     function preload() {
       // Setup for Tone.js
       Tone.start();
@@ -204,17 +227,19 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       lowPass = new Tone.Filter(2000, "lowpass").connect(filter);
       synth.connect(lowPass);
     }
+
     function setup() {
-  // Create canvas with constrained size to prevent overflow
-  let cnv = createCanvas(min(windowWidth, 800), min(windowHeight, 600));
-  cnv.style('width', '100%');
-  cnv.style('height', 'auto');
-  background(BG_COLOR);
-  // Initialize noise particles
-  for (let i = 0; i < MAX_PARTICLES; i++) {
-    addNoiseParticle();
-  }
-}
+      // Get the canvas element by ID and pass it to createCanvas
+      const canvasElement = document.getElementById('myCanvas');
+      let cnv = createCanvas(min(windowWidth, 800), min(windowHeight, 600), canvasElement);
+      cnv.style('wdith', '100%');
+      background(BG_COLOR);
+      // Initialize noise particles
+      for (let i = 0; i < MAX_PARTICLES; i++) {
+        addNoiseParticle();
+      }
+    }
+
     function draw() {
       // Semi-transparent background for trails
       fill(BG_COLOR, BG_COLOR, BG_COLOR, 30);
@@ -254,6 +279,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         textAlign(LEFT);
       }
     }
+
     function addNoiseParticle() {
       noiseParticles.push({
         x: random(width),
@@ -266,6 +292,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         decay: random(0.5, 2)
       });
     }
+
     function updateNoiseParticles() {
       // Update and display each particle
       for (let i = noiseParticles.length - 1; i >= 0; i--) {
@@ -292,6 +319,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         }
       }
     }
+
     function createSignal() {
       // Play a note when signal appears
       if (millis() - lastSignalTime > 500) { // Prevent sound spam
@@ -319,6 +347,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       };
       signals.push(signal);
     }
+
     function updateSignals() {
       for (let i = signals.length - 1; i >= 0; i--) {
         let s = signals[i];
@@ -374,6 +403,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         pop();
       }
     }
+
     function drawShape(type, x, y, size) {
       if (type === "circle") {
         circle(x, y, size);
@@ -388,6 +418,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         drawPolygon(x, y, size/2, 6);
       }
     }
+
     function drawPolygon(x, y, radius, sides) {
       beginShape();
       for (let i = 0; i < sides; i++) {
@@ -396,6 +427,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       }
       endShape(CLOSE);
     }
+
     function drawConnections() {
       // Display existing connections
       for (let c of connections) {
@@ -417,6 +449,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         drawRecursiveLine(s1.x, s1.y, s2.x, s2.y, 3, blendColor, maxAlpha);
       }
     }
+
     function drawRecursiveLine(x1, y1, x2, y2, depth, color, alpha) {
       if (depth <= 0) {
         stroke(color[0], color[1], color[2], alpha);
@@ -441,6 +474,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       drawRecursiveLine(x1, y1, midX, midY, depth - 1, color, alpha * 0.8);
       drawRecursiveLine(midX, midY, x2, y2, depth - 1, color, alpha * 0.8);
     }
+
     function mousePressed() {
       // Check if clicked on a signal
       for (let i = 0; i < signals.length; i++) {
@@ -456,6 +490,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         }
       }
     }
+
     function mouseDragged() {
       // Optional: Move selected signal if desired
       // if (startSignal) {
@@ -463,6 +498,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       //   startSignal.y = mouseY;
       // }
     }
+
     function mouseReleased() {
       if (mouseConnecting && startSignal) {
         // Check if released on another signal
@@ -511,6 +547,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       mouseConnecting = false;
       startSignal = null;
     }
+
     function reduceNoise() {
       // Calculate clarity based on connection patterns
       // More connections = less noise
@@ -532,6 +569,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
         }
       }
     }
+
     function createClarityEffect(cycle) {
       // Calculate the center of the cycle
       let centerX = 0, centerY = 0;
@@ -549,16 +587,16 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       for (let p of noiseParticles) {
         let d = dist(p.x, p.y, centerX, centerY);
         let radius = calculatePolygonRadius(cycle);
-        if (d < radius * 2) {
+        if (d < radius * 1.5) {
           // Repel particles from the clarity zone
           let angle = atan2(p.y - centerY, p.x - centerX);
-          let force = map(d, 0, radius * 2, 2, 0.5);
-          p.speedX += cos(angle) * force;
-          p.speedY += sin(angle) * force;
-          p.lifespan -= 10;  // Make particles in the zone fade faster
+          p.speedX += cos(angle) * 5;
+          p.speedY += sin(angle) * 5;
+          p.decay *= 1.5; 
         }
       }
     }
+
     function calculatePolygonRadius(vertices) {
       let maxDist = 0;
       let centerX = 0, centerY = 0;
@@ -576,6 +614,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       }
       return maxDist;
     }
+
     // Find cycles in the connection graph (for polygon detection)
     function findCycle() {
       // Simple implementation to find the largest cycle
@@ -593,6 +632,7 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       }
       return bestCycle;
     }
+
     function findCycleFromNode(current, path, visited, inPath) {
       visited.add(current);
       let bestCycle = [];
@@ -617,11 +657,21 @@ This interactive artwork explores how true ideas emerge from a noisy world...
       }
       return bestCycle;
     }
+
     // Handle window resize
     function windowResized() {
-  resizeCanvas(min(windowWidth, 800), min(windowHeight, 600));
-}
-  </script>
+      resizeCanvas(min(windowWidth, 800), min(windowHeight, 600));
+    }
+</script>
+
+Interact with the artefacts:
+
+Observe the signals that appear spontaneously in the noise field
+Click and drag one signal to another to create a connection
+Try to form closed shapes (triangles, squares, etc.) with your connections
+Notice how the noise decreases as you create more coherent structures
+
+The more connections you make, especially those that form complete shapes, the more noise particles are repelled and the percentage of clarity will increases.
 
 # Once I have my rough draft of my assignment 2, solicit some critical, constructive feedback from three colleagues.
 
