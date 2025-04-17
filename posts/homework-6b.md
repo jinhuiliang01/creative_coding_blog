@@ -129,59 +129,10 @@ Truth isn’t just one bright, harsh thing. It’s more like stars—many little
 
 ## 2. Pick at least two techniques we have covered over the course of this unit
 
-I'm going to use q5.js and glitch for my AT2.
+I'm going to use q5.js, moire and glitch for my AT2.
 
 ## 3. Combine the passages and techniques I have chosen into a rudimentary rough draft for my AT2
-
-I chose the passge number 2 which is about "Thinking means inventing: getting hold of rarity, discovering the secret of that which has the huge and contingent chance to exist...".
-
-The concept came up of my mind is about inventing = creating order from chaos, and discovering secrets = interaction with the audience, contingent chance = randomness of the order, gold = the value of truth.
-
-I plan to do a clickable canvas where chaotic letters (glitched text) slowly organize into a meaningful phrase when interacted with. Uses glitch effects (easy pixel manipulation) and signals (simple sound feedback).
 
 # Once I have my rough draft of my assignment 2, solicit some critical, constructive feedback from three colleagues.
 
 # Use these responses to devise a plan for the next phase of my AT2 project.
-
-<script src="https://q5js.org/q5.min.js"></script>
-<script>
-    function setup() {
-  createCanvas(750, 400);
-  textSize(30);
-  letters = []; // Empty box to hold our letter toys
-  isOrdered = false; // Start with messy letters (not organized)
-  phrase = "SEEK THE TRUTH"; 
-  for (let i = 0; i < phrase.length; i++) { // For each letter in our secret message
-    letters.push({ // Make a letter and put it in the box
-      char: phrase[i], // The actual letter
-      x: random(width), // Throw it randomly left-right
-      y: random(height), // Throw it randomly up-down
-      targetX: 50 + i * 25, // Final organized position
-      targetY: 100
-    });
-  }
-}
-function draw() {
-  background(0); // Paint everything black every frame
-  if (!isOrdered) { // If we're in Chaos 
-    // Chaos: Glitch effect with random positions/colors
-    letters.forEach(letter => { // For each letter
-      fill(random(200, 255), random(100), random(100), 150); // Fill the colors
-      text(letter.char, letter.x + random(-2, 2), letter.y + random(-2, 2)); // Let the texts shaking
-    });
-  } else { // If we're in Order
-    // Order: Letters animate toward their true form
-    letters.forEach(letter => {
-      letter.x = lerp(letter.x, letter.targetX, 0.1); // Slide smoothly to target X
-      letter.y = lerp(letter.y, letter.targetY, 0.1); // Slide smoothly to target Y
-      fill(255, 215, 0); // Gold = discovered truth
-      text(letter.char, letter.x, letter.y); // Draw letter
-    });
-  }
-}
-function mousePressed() {
-  isOrdered = !isOrdered; // Click = switch between chaos/order
-}
-</script>
-
-This is the rough draft of my AT 2 and I plan to add some phrases and sound effects after it.
