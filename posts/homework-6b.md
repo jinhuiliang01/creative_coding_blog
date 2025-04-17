@@ -129,10 +129,18 @@ Truth isn’t just one bright, harsh thing. It’s more like stars—many little
 
 ## 2. Pick at least two techniques we have covered over the course of this unit
 
-I'm going to use q5.js, moire and glitch for my AT2.
+I'm going to use Three.js and glitch for my AT2.
 
 ## 3. Combine the passages and techniques I have chosen into a rudimentary rough draft for my AT2
 
+I will create a chaotic world. In some specific angle you could see some words. And the background would make some chaotic sound at first, when you find the word it would become a clean sound.
+
 # Once I have my rough draft of my assignment 2, solicit some critical, constructive feedback from three colleagues.
+
+how well your rough draft coheres as:
+
+1. response to your chosen text, and why / why not.
+2. an example of the post-digital, and why / why not.
+3. functioning in a chaotic aesthetic register, with reference to effective complexity.
 
 # Use these responses to devise a plan for the next phase of my AT2 project.
