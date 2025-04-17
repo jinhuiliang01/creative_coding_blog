@@ -138,7 +138,7 @@ I will create a chaotic world. In some specific angle you could see some words. 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chaotic White City</title>
+    <title>homework-6b</title>
     <style>
         body { margin: 0; }
         canvas { display: block; }
