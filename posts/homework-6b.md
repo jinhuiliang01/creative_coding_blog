@@ -286,3 +286,5 @@ how well your rough draft coheres as:
 3. functioning in a chaotic aesthetic register, with reference to effective complexity.
 
 # Use these responses to devise a plan for the next phase of my AT2 project.
+
+On top of that add more messy elements as well as I want to put some letters into it, in a way that it looks like a word. Then add some music into it to make it clear from Glitch. Symbolising people finding the truth, that is, discovering the secret of that which has the huge and contingent chance to exist, as mentioned in the article.
