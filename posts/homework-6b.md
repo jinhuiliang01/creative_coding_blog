@@ -285,6 +285,12 @@ how well your rough draft coheres as:
 2. an example of the post-digital, and why / why not.
 3. functioning in a chaotic aesthetic register, with reference to effective complexity.
 
+Harris:
+
+1. He thinks is co-response to my current topic and because i have create a many hidden spaces and the model. And it is a perfectly reference to the text of dicovering the secret of that which has the huge and contingent chance to exist.
+2. He thinks it haas a reflection of post-digital world because the cubes has a ecosystem of the post digital atmosphere and reminds him of other post digital works.
+3. He thinks is pretty well structured because the cubes are not postion crowdedly. Each of them have leaved space from each other and he thinks is a intention of the designer. Especially the cubes on the sky makes the model visually balanced.
+
 # Use these responses to devise a plan for the next phase of my AT2 project.
 
 On top of that add more messy elements as well as I want to a cube into it, in a way that it looks like a key. When user find this key they could stop the chaos. Then add some music into it to make it clear from Glitch. Symbolising people finding the truth, that is, discovering the secret of that which has the huge and contingent chance to exist, as mentioned in the article.
