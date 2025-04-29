@@ -88,15 +88,13 @@ new THREE.BoxGeometry(width, height, depth);        // 3D shape
 Example of recursion: Use for building rows of buildings from left to right in the 3D city.
 
 ```function createChaoticCity() {
-  // ...
-
   // Recursive function to build rows
   function generateBuildingRow(currentX) {
     if (currentX > 25) return; // Stop when reaching the right side (base case)
 
     // Build a row of buildings at the current X position
     for (let z = -25; z <= 25; z += 3) {
-      // ... (code to create buildings)
+    ... (code to create buildings)
     }
 
     // Move 3 units to the right and repeat
