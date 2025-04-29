@@ -287,4 +287,4 @@ how well your rough draft coheres as:
 
 # Use these responses to devise a plan for the next phase of my AT2 project.
 
-On top of that add more messy elements as well as I want to put some letters into it, in a way that it looks like a word. Then add some music into it to make it clear from Glitch. Symbolising people finding the truth, that is, discovering the secret of that which has the huge and contingent chance to exist, as mentioned in the article.
+On top of that add more messy elements as well as I want to a cube into it, in a way that it looks like a key. When user find this key they could stop the chaos. Then add some music into it to make it clear from Glitch. Symbolising people finding the truth, that is, discovering the secret of that which has the huge and contingent chance to exist, as mentioned in the article.
