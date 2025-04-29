@@ -288,8 +288,20 @@ how well your rough draft coheres as:
 Harris:
 
 1. He thinks is co-response to my current topic and because i have create a many hidden spaces and the model. And it is a perfectly reference to the text of dicovering the secret of that which has the huge and contingent chance to exist.
-2. He thinks it haas a reflection of post-digital world because the cubes has a ecosystem of the post digital atmosphere and reminds him of other post digital works.
+2. He thinks it has a reflection of post-digital world because the cubes has a ecosystem of the post digital atmosphere and reminds him of other post digital works.
 3. He thinks is pretty well structured because the cubes are not postion crowdedly. Each of them have leaved space from each other and he thinks is a intention of the designer. Especially the cubes on the sky makes the model visually balanced.
+
+Yifan:
+
+1. He thinks is pretty match the text but if the cubes could add some chaotic effect would be better. And now is lack of sound design. Also the text said thinking means inventing, he thinks when users are exploring the world is kind of thinking and find the final cube would be the inventing (finding new things).
+2. He thinks this is quite post digital because by seeing the artworks, some of the artists are using flat glitchy effect to cover on the original photo. And now the work is using a 3D choatic cubes which pretty reflect on the post digital.
+3. He thinks if the cube would be chaotic and also add some chaotic sound it would be pretty reflct on the more complex and remember not to add too much movements on the cubes or it would be not effective.
+
+Haoyuan:
+
+1. This quote is about thinking about and inventing ways to discover rare or unexpected things, as in discovering things that hardly exist. He thought my draft reflected this, as the floating blocks look a bit random at first glance, and the mix of floating and grounded blocks feels like things just happened to be there. It makes you stop and think about why they're there, like there's a secret to be solved.
+2. He thinks it's post-digital, it's not trying to look surreal or like a game. It's more about the idea behind it. And he felt that what I was doing was very much in line with the idea of the digital age.
+3. At first glance, the scene looks a bit chaotic, as if there are no clear patterns and the cubes float in strange ways. But the grid and the repeating shapes give it some structure, so it's not completely random. So it's kinda fitting for the effective complexity.
 
 # Use these responses to devise a plan for the next phase of my AT2 project.
 
